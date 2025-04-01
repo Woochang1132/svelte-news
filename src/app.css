@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -10,9 +11,11 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ccc;
 }
