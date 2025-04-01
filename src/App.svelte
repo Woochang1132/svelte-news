@@ -3,6 +3,7 @@
     import Home from "./lib/components/Home.svelte";
     import About from "./lib/components/About.svelte";
     import News from "./lib/components/News.svelte";
+    import Detail from "./lib/components/Detail.svelte";
 </script>
 
 
@@ -10,7 +11,8 @@
   {
     '/' : Home,
     '/about' : About,
-    '/news': News
+    '/news': News,
+    '/detail/:id' : Detail
   }
 } 
 />

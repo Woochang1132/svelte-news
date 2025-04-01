@@ -11,8 +11,8 @@
     <h2>비보이 브라더스 활동</h2>
     <div class="news">
         {#each newsData as news}
-        <div class="news-item">
-            <img src={news.imgUrl} alt="new1">
+        <a class="news-item" href={'#/detail/' + news.id}>
+            <img src={news.imgUrl} alt={news.title}>
             <div class="item-text">
                 <h3>{news.title}</h3>
                 <p class="date">{news.date}</p>
@@ -22,7 +22,7 @@
                     {/each}
                 </div>
             </div>
-        </div>
+        </a>
         {/each}
     </div>
 </main>
@@ -52,5 +52,9 @@
     }
     .container {
         background: #fff;
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
     }
 </style>
